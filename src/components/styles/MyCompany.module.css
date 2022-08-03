@@ -1,13 +1,212 @@
-#header{
-display: flex;
-flex-direction:row;
-justify-content: space-between;
-background-color: grey;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@400;700;900&display=swap');
+
+
+:root {
+
+    --primaryColor: white;
+    --secondaryColor: rgb(226, 154, 20);
+    --primaryFont-family: 'Roboto', sans-serif;
+    --secondFont-family: 'Monoton', cursive;
 }
 
-.coy_logo{
 
-width:50px;
-height:50px;
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vw;
 
+    background-color: var(--primaryColor);
+}
+
+#coy_logo {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#my_coy {
+    display: flex;
+    flex-direction: row;
+    margin-left: vw;
+    padding: 1vw;
+    cursor: pointer;
+
+    font-size: 3vw;
+    font-family: var(--primaryFont-family);
+}
+
+#menu {
+    margin-right: 1.5vw;
+}
+
+.menu_item {
+    padding: 5px;
+    width: 9vw;
+    cursor: pointer;
+
+    border-style: none;
+    text-decoration: "none";
+    color: "Black";
+    background-color: var(--primaryColor);
+    font-size: 2vw;
+    font-family: var(--primaryFont-family);
+
+}
+
+#login {
+    border-style: solid;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: space-between;
+    height: 50vw;
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+}
+
+#home_tagline {
+    width: 60%;
+    margin-top: 5vw;
+    margin-left: 5vw;
+
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: var(--primaryFont-family);
+}
+
+#search {
+    height: 4vw;
+    align-self: center;
+    margin-bottom: 10vw;
+    padding: 0;
+
+}
+
+#search_input {
+    width: 40vw;
+    height: 4vw;
+    margin: 0;
+    padding: 0;
+
+    border-style: none;
+    font-size: 3vw;
+    font-family: var(--primaryFont-family);
+}
+
+#search_btn {
+    width: 15vw;
+    height: 4vw;
+    margin: 0;
+    padding: 0;
+
+    border-style: none;
+    background-color: rgb(34, 31, 31);
+    color: var(--primaryColor);
+    cursor: pointer;
+    font-size: 3vw;
+    font-family: var(--primaryFont-family);
+}
+
+h {
+    font-weight: 800;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40vw;
+    align-items: center;
+    margin-top: 5vw;
+
+    background-color: var(--primaryColor);
+}
+
+
+
+.card {
+    width: 25vw;
+    margin: auto;
+    font-size: 0vw;
+
+}
+
+.card_text {
+
+    background-color: var(--secondaryColor);
+    text-align: left;
+    padding: 5px;
+    font-size: 1.5vw;
+    padding: 2px 16px;
+    font-family: var(--primaryFont-family);
+
+}
+
+.card_pic {
+    width: 25vw;
+    height: 20vw;
+}
+
+
+#side_bar {
+    display: none;
+    margin-right: 3vw;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+    #menu {
+        display: none;
+    }
+
+    #side_bar {
+        display: flex;
+    }
+
+    #content {
+
+        width: 90vw;
+        height: 60vw;
+        align-items: center;
+
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: auto;
+        margin: 15px;
+
+    }
+
+
+    .card_text {
+        font-size: 3vw;
+    }
+
+
+    .card_pic {
+        width: 90vw;
+        height: 55vw;
+    }
 }
