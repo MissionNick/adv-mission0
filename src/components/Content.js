@@ -11,8 +11,8 @@ export default function Content() {
        return (
          <div id={content} style={{ backgroundImage: `url(${background})` }}>
            <div id={home_tagline}>
-                   I spent a lot of money on booze, birds, and fast cars.
-                   The rest I just squandered  –George Best
+             I spent a lot of money on booze, birds, and fast cars.
+             The rest I just squandered –George Best
            </div>
            <Search />
          </div>

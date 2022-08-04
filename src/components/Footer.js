@@ -11,18 +11,18 @@ export default function Footer() {
     <div id={footer}>
       <Card
         pic={Footer_pic1}
-        title="Title 1"
-        text="Description of a feature."
+        title="Title text bold"
+        text="More text but not so bold."
       />
       <Card
         pic={Footer_pic2}
-        title="Title 2"
-        text="Description of a feature."
+        title="Title text bold"
+        text="More text but not so bold"
       />
       <Card
-        title="Title 3"
         pic={Footer_pic3}
-        text="Description of a feature."
+        title="Title text bold"
+        text="More text but not so bold"
       />
     </div>
   );

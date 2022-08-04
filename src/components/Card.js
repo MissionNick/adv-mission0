@@ -8,8 +8,8 @@ export default function Card(props) {
     <div className={card}>
       <img className={card_pic} src={pic} alt={title} />
       <div className={card_text}>
-        <h4>{title}</h4>
-        <p>{text}</p>
+        <t>{title}</t>
+        <x>{text}</x>
       </div>
     </div>
   );
