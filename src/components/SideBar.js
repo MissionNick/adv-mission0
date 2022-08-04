@@ -1,13 +1,22 @@
-import { FaBars } from 'react-icons/fa';
-import styles from '../components/styles/MyCompany.module.css'
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import styles from "../components/styles/MyCompany.module.css";
 
+const { side_bar } = styles;
 
-const { side_bar} = styles
+export default function SideBar(props) {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function SideBar({ toggle }) {
+  const toggle = () => {
+    const el = document.querySelector("#refMenu");
+    setIsOpen(!isOpen);
+    el.style.display = isOpen ? "flex" : "none";
+    console.log("Is open ", isOpen, " Element ", el);
+  };
+
   return (
-    <div id={side_bar} onClick={toggle}>
-      <FaBars size={28} onClick={toggle} />
+    <div onClick={toggle} id={side_bar}>
+      <FaBars size={28} />
     </div>
   );
 }

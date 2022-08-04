@@ -87,7 +87,7 @@
     font-family: var(--primaryFont-family);
 }
 
-#menu {
+.menu {
     margin-right: 4vw;
 }
 
@@ -242,7 +242,8 @@ x {
         cursor: pointer;
     }
 
-    #menu {
+    .menu {
+        display:none;
         flex-direction: column;
         position: fixed;
         top: 9vw;
@@ -346,7 +347,7 @@ x {
     }
 
  
-    #menu {
+    .menu {
         flex-direction: column;
         position: fixed;
         top: 20vw;
