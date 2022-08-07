@@ -91,22 +91,37 @@
     margin-right: 4vw;
 }
 
+.menuHide {
+    margin-right: 4vw;
+}
+
 .menu_item {
-    padding: 5px;
+    padding: 0 10px;
     width: 9vw;
     cursor: pointer;
 
     border-style: none;
     text-decoration: "none";
-    color: "Black";
+    color: Black;
     background-color: var(--primaryColor);
     font-size: 2vw;
     font-family: var(--primaryFont-family);
+    transition: 0.4s;
 
+}
+
+.menu_item:hover {
+    background-color: black;
+    color: white;
 }
 
 #login {
     border-style: solid;
+}
+
+#login:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor)
 }
 
 #content {
@@ -243,13 +258,17 @@ x {
     }
 
     .menu {
-        display:none;
+        display: flex;
         flex-direction: column;
         position: fixed;
         top: 9vw;
         Right: -2vw;
         z-index: 1;
 
+    }
+
+    .menuHide {
+        display: none;
     }
 
 
@@ -260,10 +279,20 @@ x {
         color: var(--primaryColor);
     }
 
+    .menu_item:hover {
+        background-color: var(--primaryColor);
+        color: var(--secondaryColor)
+    }
+
     #login {
         border-style: solid;
         background-color: var(--primaryColor);
         color: black;
+    }
+
+    #login:hover {
+        background-color:black;
+        color: white;
     }
 
 
@@ -346,7 +375,7 @@ x {
         height: 20vw;
     }
 
- 
+
     .menu {
         flex-direction: column;
         position: fixed;
@@ -357,7 +386,7 @@ x {
     }
 
 
- 
+
     #content {
 
         height: 68vw;
@@ -391,4 +420,12 @@ x {
 
     }
 
+    X {
+        font-size: 5vw;
+    }
+
+
+    t {
+        font-size: 10vw;
+    }
 }
