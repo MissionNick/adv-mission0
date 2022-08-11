@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "../components/ErrorFallback";
 import { MenuContext } from "../helper/Context"
+//import { Helmet } from "react-helmet";
+
+import IbmChatbot from "../components/IbmChatbot";
+
 
 import Header from "../components/Header";
 import Content from "../components/Content";
@@ -18,6 +22,7 @@ export default function Home() {
       }}
     >
       <MenuContext.Provider value={{ isVisible, toggle }}>
+        <IbmChatbot />
         <Header />
         <Content />
         <Footer />
